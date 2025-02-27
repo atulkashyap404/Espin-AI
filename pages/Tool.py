@@ -63,13 +63,13 @@ if uploaded_image:
     st.subheader("Image Conversions")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.image(binary, caption="Binary", use_column_width=True)
+        st.image(binary, caption="Binary", use_container_width=True)
     with col2:
-        st.image(grayscale, caption="Grayscale", use_column_width=True)
+        st.image(grayscale, caption="Grayscale", use_container_width=True)
     with col3:
-        st.image(color, caption="Color", use_column_width=True)
+        st.image(color, caption="Color", use_container_width=True)
     with col4:
-        st.image(multispectral, caption="Multispectral", use_column_width=True)
+        st.image(multispectral, caption="Multispectral", use_container_width=True)
 
     diameters = measure_nanofiber_diameter(img)
     st.subheader("Nanofiber Diameters")
@@ -80,7 +80,7 @@ if uploaded_image:
 
     highlighted_img = highlight_nanofibers(img)
     st.subheader("Highlighted Nanofibers")
-    st.image(highlighted_img, channels="BGR", use_column_width=True, caption="Detected Nanofibers with Red Edges")
+    st.image(highlighted_img, channels="BGR", use_container_width=True, caption="Detected Nanofibers with Red Edges")
 
     st.subheader("Manual Nanofiber Diameter Measurement")
     scale_nm_per_pixel = st.number_input("Enter scale (nm per pixel):", min_value=0.1, max_value=1000.0, value=1.0)

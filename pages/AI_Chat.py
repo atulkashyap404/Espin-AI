@@ -5,7 +5,7 @@ from utils.api import fetch_groq_response
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-st.title("🧠 Nanofiber AI Chat")
+st.title("🧠 E-SPIN AI")
 
 # Display chat history
 for message in st.session_state.chat_history:

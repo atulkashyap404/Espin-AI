@@ -50,7 +50,7 @@ def measure_distance(points, scale_nm_per_pixel):
         return distance_pixels, distance_nm
     return None, None
 
-st.title("Nanofiber Analysis Tool")
+st.title("E-SPIN Nanofiber Analysis Tool")
 
 uploaded_image = st.file_uploader("Upload a Nanofiber Image", type=["jpg", "png", "jpeg"])
 

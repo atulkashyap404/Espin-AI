@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # 📌 Page Title
-st.title("📊 Advanced Data Visualization")
+st.title("📊 E-SPIN Advanced Data Visualization")
 
 # 📂 File Upload Section
 st.subheader("📂 Upload a Data File (CSV, Excel, TSV)")

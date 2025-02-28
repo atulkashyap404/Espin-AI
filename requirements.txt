@@ -7,7 +7,7 @@ plotly
 requests
 python-dotenv
 opencv-python-headless
-
+scikit-image
 
 
 

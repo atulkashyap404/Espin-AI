@@ -1,5 +1,4 @@
 streamlit
-opencv-python
 numpy
 scikit-image
 pandas
@@ -8,7 +7,7 @@ plotly
 requests
 python-dotenv
 opencv-python-headless
-libgl1
+
 
 
 

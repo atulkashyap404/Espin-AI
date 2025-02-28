@@ -57,9 +57,9 @@ if uploaded_file is not None:
     
     col1, col2 = st.columns(2)
     with col1:
-        st.image(image, caption="🖼 Enhanced Original Image", use_column_width=True, channels="GRAY")
+        st.image(image, caption="🖼 Enhanced Original Image", use_container_width=True, channels="GRAY")
     with col2:
-        st.image(binary_image, caption="📊 Segmented Image (Otsu’s Thresholding)", use_column_width=True, clamp=True)
+        st.image(binary_image, caption="📊 Segmented Image (Otsu’s Thresholding)", use_container_width=True, clamp=True)
     
     # Segmentation overlay
     outlines = measure.find_contours(binary_image, 0.5)
@@ -67,7 +67,7 @@ if uploaded_file is not None:
     for outline in outlines:
         for x, y in outline:
             overlay_image[int(x), int(y)] = 255
-    st.image(overlay_image, caption="🔍 Segmentation Outlines Overlay", use_column_width=True, channels="GRAY")
+    st.image(overlay_image, caption="🔍 Segmentation Outlines Overlay", use_container_width=True, channels="GRAY")
     
     # Grayscale histogram
     fig1 = go.Figure()
